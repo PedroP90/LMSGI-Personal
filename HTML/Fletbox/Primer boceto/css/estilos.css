@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: blue;
+    height: 100px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+}
+
+header figure{
+    background-color: violet;
+    width: 20%;
+    /* flex: 1;
+     flex divide en partes sin usar %   */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: row nowrap; */
+    order: 1;
+}
+
+header figure img {
+    /* width: 90px; */
+    height: 90%;
+    border-radius: 100%;
+    box-shadow: 10px 0 black;
+    
+}
+
+header nav {
+    background-color: green;
+    width: 100%;
+    order: 4;
+    height: 40px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* flex: 3; */  
+}   
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    width: 10%;
+    font-size: 20px;
+}
+header #search {
+    width: 50%;
+    order: 2;
+    background-color: grey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header #search input{
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+    color: blue;
+    background-image: url(../img/react.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+header i {
+    width: 30%;
+    font-size: 30px;
+    color: blue;
+}
+header #search i {
+    width: 10%;
+    font-size: 30px;
+   
+}
+header #search i:hover {
+    color: red;
+    font-size: 40px;
+}
+header #registro {
+    background-color: yellow;
+    width: 30%;
+    display: block;
+    /* flex: 1; */
+    order: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    
+    
+}
+/* header #registro #user {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding: 10px;
+    
+}
+header #registro #user input{
+    order: 1; 
+}
+header #registro #user label{
+    order: 2;
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+header #registro #password{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding: 10px;
+}
+header #registro #password input {
+    order: 1;
+}
+header #registro #password label {
+    order: 2;
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+header #registro input {
+    height: 30px;
+} */

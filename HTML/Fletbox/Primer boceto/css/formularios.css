@@ -1,0 +1,19 @@
+
+
+.boton {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.boton input {
+    order: 1;
+}
+
+.boton label {
+    order: 2;
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}

@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+
+}
+
+main {
+    background-color: red;
+    height: 100px;
+}

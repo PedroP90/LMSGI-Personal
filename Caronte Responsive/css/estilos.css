@@ -13,6 +13,7 @@ body {
     background-color: rgba(0, 0, 0, .2);
 }
 @media screen and (min-width: 0px) {
+    
     header a {
         text-decoration: none;
         color: black;
@@ -29,7 +30,6 @@ body {
         width: 100%;
         padding: 10px;
         background-color: ghostwhite
-        
     }
     header nav#sociales a {
         font-size: 20px;
@@ -41,11 +41,12 @@ body {
     }
     header figure {
         height: 100px;
-
     }
     header figure img{
         height: 90%;
     }
+
+
     header h1 {
         width: 60%;
         font-size: 40px;
@@ -79,12 +80,17 @@ body {
     }
 }
 
-@media screen and (min-widht: 650px) {
+@media screen and (min-width: 650px) {
+    
     header {
-        background-color: aqua;
+        background-color: blue;
     }
 }
 
-@media screen and (min-widht: 900px) {
+@media screen and (min-width: 900px) {
+
+    header {
+        background-color: brown;
+    }
     
 }

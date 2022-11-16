@@ -29,12 +29,27 @@ body {
     header nav#sociales {
         width: 100%;
         padding: 10px;
-        background-color: ghostwhite
+        background-color: ghostwhite;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
     }
     header nav#sociales a {
         font-size: 20px;
         padding-right: 10px;
-        justify-content: flex-end;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 5px;
+        
+    }
+    header nav#sociales a i {
+        justify-content: space-around;
+        height: 10px;
+        padding: 3px;
+        max-width: 50%;
+       
     }
     header nav#contacto {
         display: none;

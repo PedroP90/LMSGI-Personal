@@ -12,6 +12,9 @@
 body {
     background-color: rgba(0, 0, 0, .2);
 }
+a {
+    text-decoration: none;
+ }
 @media screen and (min-width: 0px) {
     
     header a {
@@ -32,24 +35,21 @@ body {
         background-color: ghostwhite;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
         
     }
     header nav#sociales a {
-        font-size: 20px;
         padding-right: 10px;
         padding: 5px;
         border: 2px solid black;
         border-radius: 5px;
         margin: 5px;
-        
+        text-align: center;
     }
     header nav#sociales a i {
-        justify-content: space-around;
+        justify-content: center;
         height: 10px;
         padding: 3px;
-        max-width: 50%;
-       
+        font-size: 20px;
     }
     header nav#contacto {
         display: none;
@@ -92,6 +92,42 @@ body {
     }
     header #ppal a i{
         display: none;
+    }
+    main {
+
+    }
+    main div#trabajo {
+        background-color: orange;
+    }
+    main div#trabajo h1 {
+        color: white;
+    }
+    main div#trabajo nav a {
+        color: blue;
+    }
+    main div#trabajo nav a:last-child {
+        color: black;
+    }
+    section {
+
+    }
+    main section article {
+        display: flex;
+        flex-flow: column nowrap;
+        border: 2px solid black;
+
+    }
+    main section article figure {
+        height: 100%;
+    }
+    main section article figure img {
+        height: 100px;
+    }    
+    main section article figure span {
+        width: 50%;
+    }
+    main section article figure h3 {
+        width: 50%;
     }
 }
 

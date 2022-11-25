@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+
+header {
+    height: 100px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+header figure img {
+    height: 80px;
+    width: 80px;
+}
+
+header h1 {
+
+}
+
+header div {
+    
+}
+
+main {
+    border: 2px solid black;
+    height: 500px;
+}
+
+main section {
+    background-color: gray;
+    height: 100%;
+}
+
+main aside {
+    background-color: orange;
+    height: 100%;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+}

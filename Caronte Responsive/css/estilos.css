@@ -68,6 +68,7 @@ a {
     }
     header figure img{
         height: 90%;
+        padding-top: 10px;
     }
 
 
@@ -89,11 +90,15 @@ a {
         flex-flow: column nowrap;
         width: 95%;
     }
+   
     header #ppal a {
         padding: 5px;
         border: 1px solid white;
         color: whitesmoke;
         margin-bottom: 5px;
+    }
+    header #ppal a:nth-child(6) {
+        display: none;
     }
     header #ppal a span {
         font-size: 25px;
@@ -160,18 +165,24 @@ a {
         order: 1;
         background-color: ghostwhite;
         padding: 10px;
+        
+       
 
     }
     header #contacto a {
         display: flex;
         flex-flow: row nowrap;
-        font-size: 20px;
+        font-size: 15px;
+        
     }
     header #contacto a i {
         order: 1;
+        margin: 2px;
+        
     }
     header #contacto a span {
         order: 2;
+        margin: 2px;
     }
     header nav#sociales {
         width: 100%;
@@ -183,12 +194,17 @@ a {
         border-radius: 0px !important;
     }
     header figure {
+        display: flex;
+        justify-content: flex-end;
         order: 3;
-        width: 40%;
+        width: 30%;
+    }
+    header figure img {
+        height: 80%;
     }
     header h1 {
         order: 4;
-        width: 60%;
+        width: 70%;
     }
     header button {
         display: none;
@@ -196,19 +212,29 @@ a {
     header nav#ppal {
         order: 5;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
         
 
     }
+    
     header #ppal a {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         border: 0px solid white;
     }
+    header #ppal a:nth-child(6) {
+        display: flex;
+    }
     header #ppal a span {
-        font-size: 25px;
+        order: 2;
+        font-size: 20px;
         color: white;
     }
     header #ppal a i{
+        order: 1;
         display: flex;
+        flex-flow: row nowrap;
         font-size: 40px;
         color: green;
         padding: 5px;
@@ -219,207 +245,17 @@ a {
 @media screen and (min-width: 900px) {
 
     header {
-        background-color: black;
-        height: 250px;
-        display: flex;
-        flex-flow: row wrap;
+        background-color: none;
     }
-    
-    header #contacto {
-        background-color: white;
-        height: 20%;
-        width: 80%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
+    header nav#sociales{
+        width: 40%;
     }
-    
-    header #contacto a {
-        font-size: 17px;
-        text-decoration: none;
-        padding: 5px;
-        color: black;
-        
-    }
-    
-    header #contacto a:nth-child(1) {
-        margin-left: 5px;
-    }
-    
-    header #sociales {
-        background-color: white;
-        height: 20%;
-        width: 20%;
-        display: flex;
-        flex-flow: nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    header #sociales a {
-        font-size: 25px;
-    }
-    
-    header figure {
-        height: 70%;
-        width: 20%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    
-    header figure img {
-        height: 65%;
-        
-    }
-    
-    header figure h2 {
-        color: white;
-    }
-    
-    header #ppal {
-        width: 100%;
-        color: white;
-        background-color: black;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-        
-    }
-    
-    header #ppal a {
-        text-decoration: none;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-    
-    
-    header #ppal a i {
-        font-size: 40px;
-        color: green;
-        padding: 5px;
-    
-    }
-    
-    header #ppal a:hover i {
-        color: white;
-        order: 2;
-        transition: 1s;
-        
-    }
-    
-    header #ppal a span {
-        font-size: 20px;
-        font-family: Oswald;
-        color: white;
-    }
-    
-    header #ppal a:hover span {
-        color: green;
-        order: 1;
-        transition: 1s;
-        
-    }
-    
-    main{
-        height: 500px;
-    }
-    
-    main #trabajo {
-        height: 50px;
-        background-color: orange;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-    
-    main #trabajo h1 {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        width: 20%;
-        text-align: center;
-        font-size: 30px;
-        font-family: Oswald;
-    }
-    
-    main #trabajo nav {
-        width: 30%;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
+
+    header nav#contacto {
+        width: 60%;
+        background-color: ghostwhite;
+        padding-top: 23px;
        
-    }
-    
-    main #trabajo nav a {
-        text-decoration: none;
-        padding: 5px;
-    }
-    
-    main #trabajo nav a:nth-child(5) {
-        color: black;
-        font-style: oblique;
-        font-size: 18px;
-    }
-    
-    
-    
-    main section {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        gap: 20px;
-        padding: 10px;
-    
-    }
-    
-    main section article {
-        width: 32%;
-        border: 2px solid black;
-        border-radius: 5px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    main section article figure {
-        height: 100px;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    main section article figure img {
-        height: 100%;
-        width: 25%;
-        padding: 5px;
-        display: flex;
-        justify-content: space-between;
-    
-    }
-    
-    main section article span {
-        width: 90%;
-        color: blue;
-        font-size: 20px;
-        
-    }
-    
-    main section article h3 {
-        font-style: italic;
-        font-size: 15px;
-        padding: 5px;
-        font-family: lato;
     }
 
 }

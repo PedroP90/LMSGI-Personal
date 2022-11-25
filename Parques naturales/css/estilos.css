@@ -3,3 +3,30 @@
     padding: 0;
     margin: 0;
 }
+@media screen and (min-width: 0px) {
+    body > header {
+        background-image: url(../img/small/sirenas.jpg);
+        height: 100px;
+        display: flex;
+        
+    }
+    header nav#parque {
+
+    }
+    header nav#contacto {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    body header {
+        background-color: url(../img/small/sirenas.jpg);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body header {
+        background-color: url(../img/small/sirenas.jpg);
+    }
+}

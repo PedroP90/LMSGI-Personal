@@ -6,15 +6,79 @@
 @media screen and (min-width: 0px) {
     body > header {
         background-image: url(../img/small/sirenas.jpg);
+        background-position: center;
         height: 100px;
         display: flex;
-        
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
     }
-    header nav#parque {
+
+    header h1 {
+        color: white;
+        font-size: 18px;
+        width: 50%;
+        font-style: italic;
+        font-weight: 800;
+        padding-left: 10px;
+    }
+
+    header button {
+        color: white;
+        background-color: transparent;
+        border: 0px;
+        font-size: 25px;
+        padding-right: 20px;
 
     }
     header nav#contacto {
         display: none;
+    }
+
+    main section h2 {
+        color: green;
+        font-size: 16px;
+        font-weight: bolder;
+        width: 65%;
+        padding: 10px;
+    }
+    main #p1 {
+        text-align: justify;
+        text-indent: 5%;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    main #p2 {
+        display: none;
+    }
+    main #p3 {
+        display: none;
+    }
+
+    main figure {
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    main figure picture {
+        width: 25%;
+        
+    }
+    
+    main figure picture source {
+        width: 25%;
+    }
+
+    main figure picture:last-child {
+        display: none;
+    }
+
+    main figure picture source img {
+        max-width: 100%;
+        height: auto
     }
 }
 
@@ -28,5 +92,6 @@
 @media screen and (min-width: 900px) {
     body header {
         background-color: url(../img/small/sirenas.jpg);
+        
     }
 }
